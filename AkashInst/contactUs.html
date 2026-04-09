@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment & Inquiry | Corelit Innovations</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .loader { border-top-color: #2563eb; animation: spinner 1s linear infinite; }
+        @keyframes spinner { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        
+        /* Custom Checkbox Styling */
+        .custom-checkbox:checked + div { border-color: #2563eb; background-color: #eff6ff; }
+        .custom-checkbox:checked + div i { opacity: 1; transform: scale(1); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased">
+
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">     
+            <div class="text-2xl font-extrabold tracking-tighter">
+           S.K Coaching<span class="text-blue-600"> Center</span>
+            </div>
+            <a href="index.html" class="flex items-center gap-2 text-sm font-bold text-slate-600 hover:text-blue-600 transition group">
+                <i class="fa-solid fa-arrow-left transition-transform group-hover:-translate-x-1"></i> Back to Home
+            </a>
+        </div>
+    </nav>
+
+    <main class="py-20 px-6">
+        <div class="max-w-6xl mx-auto grid lg:grid-cols-5 gap-16">
+            
+            <div class="lg:col-span-2">
+                <span class="inline-block px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-xs font-bold mb-6">ADMISSIONS 2026</span>
+                <h1 class="text-4xl lg:text-5xl font-extrabold text-slate-900 leading-[1.1] mb-6">Start Your <span class="text-blue-600">Success</span> Story Today.</h1>
+                <p class="text-lg text-slate-500 mb-12">Fill out the details below. Our academic counselors will analyze your requirements and get back to you within 24 hours.</p>
+
+                <div class="space-y-8">
+                    <div class="flex gap-5">
+                        <div class="w-12 h-12 rounded-2xl bg-white shadow-md flex items-center justify-center text-blue-600 border border-slate-100"><i class="fa-solid fa-laptop-code"></i></div>
+                        <div><h4 class="font-bold">Computer & Academics</h4><p class="text-sm text-slate-500">Dual-focus learning.</p></div>
+                    </div>
+                    <div class="flex gap-5">
+                        <div class="w-12 h-12 rounded-2xl bg-white shadow-md flex items-center justify-center text-blue-600 border border-slate-100"><i class="fa-solid fa-clock"></i></div>
+                        <div><h4 class="font-bold">Flexible Batches</h4><p class="text-sm text-slate-500">Morning, Evening & Weekend slots.</p></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-3">
+                <div class="bg-white rounded-[2.5rem] shadow-2xl shadow-blue-900/5 border border-slate-200 p-8 md:p-12 relative overflow-hidden">
+                    
+                    <form id="enrollmentForm" class="space-y-8">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label class="text-xs font-bold uppercase tracking-widest text-slate-400 ml-1">Student Name</label>
+                                <input type="text" name="name" placeholder="Shubham" required class="w-full px-6 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:bg-white outline-none transition duration-200">
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-xs font-bold uppercase tracking-widest text-slate-400 ml-1">Phone Number</label>
+                                <input type="tel" name="phone" placeholder="+91 9599187273" required class="w-full px-6 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:bg-white outline-none transition duration-200">
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label class="text-xs font-bold uppercase tracking-widest text-slate-400 ml-1">Target Class</label>
+                                <input type="text" name="class" placeholder="e.g. Class 10th or BCA" required class="w-full px-6 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:bg-white outline-none transition duration-200">
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-xs font-bold uppercase tracking-widest text-slate-400 ml-1">Interested Subjects</label>
+                                <input type="text" name="subjects" placeholder="e.g. Maths, Science, Python" required class="w-full px-6 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:bg-white outline-none transition duration-200">
+                            </div>
+                        </div>
+
+                        <div class="space-y-4">
+                            <label class="text-xs font-bold uppercase tracking-widest text-slate-400 ml-1">Preferred Batch Timings</label>
+                            <div class="grid grid-cols-2 gap-4">
+                                <label class="relative cursor-pointer group">
+                                    <input type="checkbox" name="timing" value="Morning" class="sr-only custom-checkbox">
+                                    <div class="w-full px-6 py-5 border border-slate-200 rounded-2xl flex items-center justify-between transition group-hover:bg-slate-50">
+                                        <div class="flex items-center gap-3">
+                                            <i class="fa-solid fa-sun text-orange-400"></i>
+                                            <span class="font-bold text-slate-700 text-sm">Morning Batch</span>
+                                        </div>
+                                        <i class="fa-solid fa-circle-check text-blue-600 opacity-0 scale-75 transition duration-200"></i>
+                                    </div>
+                                </label>
+
+                                <label class="relative cursor-pointer group">
+                                    <input type="checkbox" name="timing" value="Evening" class="sr-only custom-checkbox">
+                                    <div class="w-full px-6 py-5 border border-slate-200 rounded-2xl flex items-center justify-between transition group-hover:bg-slate-50">
+                                        <div class="flex items-center gap-3">
+                                            <i class="fa-solid fa-moon text-blue-900"></i>
+                                            <span class="font-bold text-slate-700 text-sm">Evening Batch</span>
+                                        </div>
+                                        <i class="fa-solid fa-circle-check text-blue-600 opacity-0 scale-75 transition duration-200"></i>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="space-y-2">
+                            <label class="text-xs font-bold uppercase tracking-widest text-slate-400 ml-1">Additional Notes</label>
+                            <textarea name="message" rows="3" placeholder="Tell us about your learning goals..." class="w-full px-6 py-4 bg-slate-50 border border-slate-200 rounded-2xl focus:ring-2 focus:ring-blue-500 focus:bg-white outline-none transition duration-200"></textarea>
+                        </div>
+
+                        <button type="submit" id="submitBtn" class="w-full py-5 bg-blue-600 text-white rounded-2xl font-extrabold text-lg shadow-xl shadow-blue-500/20 hover:bg-blue-700 hover:-translate-y-1 transition duration-300 flex items-center justify-center gap-4 group">
+                            <span>Submit Application</span>
+                            <div id="btnLoader" class="hidden loader w-5 h-5 border-2 border-white rounded-full"></div>
+                            <i class="fa-solid fa-paper-plane text-sm transition-transform group-hover:translate-x-2 group-hover:-translate-y-1"></i>
+                        </button>
+                    </form>
+
+                    <div id="successOverlay" class="hidden absolute inset-0 bg-white z-20 flex flex-col items-center justify-center text-center p-12 transition-all duration-500">
+                        <div class="w-24 h-24 bg-blue-50 rounded-full flex items-center justify-center text-blue-600 text-4xl mb-6 animate-bounce">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <h2 class="text-3xl font-extrabold text-slate-900 mb-3">Application Submitted!</h2>
+                        <p class="text-slate-500 mb-8 max-w-xs">We've received your details and added them to our roster. A counselor will call you shortly.</p>
+                        <button onclick="location.reload()" class="font-bold text-blue-600 hover:text-blue-800 transition">← Submit Another Inquiry</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // REPLACE THIS with your actual Google Apps Script Web App URL
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbynO04_RsKho0xLgyuGTOWJKac6UIby8y55TMG0QsxVa5pcQ-hPKUBJp46u2nVNBmk5/exec'; 
+        
+        const form = document.getElementById('enrollmentForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const successOverlay = document.getElementById('successOverlay');
+        const btnLoader = document.getElementById('btnLoader');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            
+            submitBtn.disabled = true;
+            btnLoader.classList.remove('hidden');
+            submitBtn.querySelector('span').innerText = 'Processing...';
+
+            const formData = new FormData(form);
+            
+            // To handle multiple selected checkboxes (Timings)
+            const timings = [];
+            document.querySelectorAll('input[name="timing"]:checked').forEach((checkbox) => {
+                timings.push(checkbox.value);
+            });
+            formData.set('timing', timings.join(', '));
+
+            fetch(scriptURL, { method: 'POST', body: formData })
+                .then(response => {
+                    successOverlay.classList.remove('hidden');
+                })
+                .catch(error => {
+                    console.error('Error!', error.message);
+                    alert("Submission failed. Please check your connection.");
+                    submitBtn.disabled = false;
+                    btnLoader.classList.add('hidden');
+                    submitBtn.querySelector('span').innerText = 'Submit Application';
+                });
+        });
+    </script>
+</body>
+</html>

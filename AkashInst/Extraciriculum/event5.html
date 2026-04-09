@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>X'MS Celebration-S.K Coaching Center</title>
+   <link rel="icon" type="image/png" href="/Media/S.K.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+  .gallery-item {
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .gallery-item img {
+    display: block;
+    width: 100%;   /* Fill container width */
+    height: auto;  /* Keep original image ratio */
+    transition: transform 0.3s ease;
+  }
+  .gallery-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  }
+</style>
+
+<body class="bg-gray-50 font-sans">
+
+  <!-- Header -->
+  <header class="bg-purple-700 text-white py-8 shadow-lg">
+    <h1 class="text-center text-4xl font-extrabold tracking-wide">Holi Celebration</h1>
+    <p class="text-center text-purple-200 mt-2 text-lg">A night of hope, unity, and change</p>
+  </header>
+
+  <!-- Main Section -->
+  <main class="max-w-7xl mx-auto px-6 py-12">
+    <!-- Section Title -->
+    <div class="text-center mb-10">
+      <h2 class="text-3xl font-semibold text-gray-800">Event Highlights</h2>
+      <p class="text-gray-600 mt-2">Capturing moments that made our evening unforgettable</p>
+    </div>
+
+    <!-- Responsive Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <div class="rounded-xl overflow-hidden shadow-md hover:shadow-xl transition transform hover:scale-105">
+        <img src="/Media/Holi/1.jpeg" class="w-full h-80  " alt="Gala Image 1" />
+      </div>
+
+      <!-- Card 2 -->
+      <div class="rounded-xl overflow-hidden shadow-md hover:shadow-xl transition transform hover:scale-105">
+        <img src="/Media/Holi/2.jpeg" class="w-full h-80  " alt="Gala Image 2" />
+      </div>
+
+      <!-- Repeat for all images -->
+      <div class="rounded-xl overflow-hidden shadow-md hover:shadow-xl transition transform hover:scale-105">
+        <img src="/Media/Holi/3.jpeg" class="w-full h-80  " alt="Gala Image 3" />
+      </div>
+
+      <div class="rounded-xl overflow-hidden shadow-md hover:shadow-xl transition transform hover:scale-105">
+        <img src="/Media/Holi/4.jpeg" class="w-full h-80 " alt="Gala Image 4" />
+      </div>
+
+      
+    
+      
+    </div>
+
+    <!-- Back Button -->
+    <div class="mt-12 text-center">
+      <a href="gallery.html"
+         class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-medium px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition transform hover:scale-105">
+        ← Back to Gallery
+      </a>
+    </div>
+  </main>
+
+</body>
+</html>

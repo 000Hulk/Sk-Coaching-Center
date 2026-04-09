@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Events Gallery-S.K Coaching Center</title>
+     <link rel="icon" type="image/png" href="/Media/S.K.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gradient-to-br from-gray-100 to-gray-200 flex flex-col min-h-screen font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-md py-5">
+      <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+        <!-- Left section: Logo + Company Name -->
+        <div class="flex items-center space-x-4">
+          <img
+            src="/Media/S.K.png"
+            alt="Company Logo"
+            class="h-12 w-12 object-contain"
+          />
+          <h1 class="text-3xl font-extrabold text-gray-900 tracking-tight">S.K Coaching Center</h1> 
+          
+        </div>
+
+        <!-- Right section: Navigation (desktop) -->
+        <nav class="hidden md:flex space-x-8">
+          <a href="/index.html" class="text-gray-700 hover:text-blue-600 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">
+            Home
+          </a>
+          
+          <a href="#" class="text-gray-700 hover:text-blue-600 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">
+            Contact
+          </a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="menu-btn"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          class="md:hidden text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded"
+        >
+          <svg
+            class="h-6 w-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden px-6 pt-4 pb-3 space-y-3 bg-white shadow-md border-t border-gray-200"
+      >
+        <a href="/index.html" class="block text-gray-700 hover:text-blue-600 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">
+          Home
+        </a>
+        
+        <a href="#" class="block text-gray-700 hover:text-blue-600 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">
+          Contact
+        </a>
+      </div>
+    </header>
+
+    <br>
+
+    <div style="margin: auto;"><h1 class="text-4xl font-extrabold text-gray-900 tracking-tight" >
+            Our Events Gallery
+          </h1>
+          </div>
+
+    <!-- Our Memories Section -->
+    <section class="bg-white max-w-7xl mx-auto mt-12 px-6 py-12 rounded-3xl shadow-lg flex flex-col md:flex-row items-center gap-10">
+      
+      <div class="md:w-1/2">
+        <img
+          src="https://source.unsplash.com/800x600/?memories,event,celebration"
+          alt="Wonderful Memories"
+          class="rounded-2xl shadow-lg object-cover w-full h-72 md:h-full"
+          loading="lazy"
+        />
+      </div>
+      <div class="md:w-1/2 text-center md:text-left">
+        <h2 class="text-2xl font-extrabold text-gray-900 mb-4">
+          Cherishing Our Wonderful Memories
+        </h2>
+        <p class="text-gray-700 text-lg leading-relaxed">
+          Our events are more than just gatherings — they are moments filled with joy, inspiration, and community spirit. Each event creates lasting memories that bring us closer and empower us to make a difference together. Explore our gallery to relive these special moments and be part of our journey.
+        </p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="flex-grow flex items-center justify-center py-12">
+      <div
+        class="max-w-6xl mx-auto px-6 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8"
+      >
+        <!-- Event Card Template -->
+        <div
+          class="bg-white rounded-2xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 focus-within:scale-105 focus-within:shadow-lg cursor-pointer"
+          tabindex="0"
+          aria-label="Annual Conference event card"
+        >
+          <img
+            src="https://source.unsplash.com/600x400/?conference"
+            alt="Annual Conference"
+            class="w-full h-44 object-cover"
+            loading="lazy"
+          />
+          <div class="p-4 flex flex-col items-center text-center space-y-3">
+            <h2 class="text-lg font-semibold text-gray-900">Annual Conference</h2>
+            <a
+              href="event1.html"
+              class="inline-block px-5 py-2 bg-gradient-to-r from-blue-600 to-blue-800 text-white font-semibold rounded-full shadow-md hover:shadow-lg hover:opacity-90 focus:outline-none focus:ring-4 focus:ring-blue-400 transition"
+            >
+              View
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-2xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 focus-within:scale-105 focus-within:shadow-lg cursor-pointer"
+          tabindex="0"
+          aria-label="Charity Drive event card"
+        >
+          <img
+            src="https://source.unsplash.com/600x400/?charity"
+            alt="Charity Drive"
+            class="w-full h-44 object-cover"
+            loading="lazy"
+          />
+          <div class="p-4 flex flex-col items-center text-center space-y-3">
+            <h2 class="text-lg font-semibold text-gray-900">Charity Drive</h2>
+            <a
+              href="event2.html"
+              class="inline-block px-5 py-2 bg-gradient-to-r from-blue-600 to-blue-800 text-white font-semibold rounded-full shadow-md hover:shadow-lg hover:opacity-90 focus:outline-none focus:ring-4 focus:ring-blue-400 transition"
+            >
+              View
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-2xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 focus-within:scale-105 focus-within:shadow-lg cursor-pointer"
+          tabindex="0"
+          aria-label="Volunteer Meet event card"
+        >
+          <img
+            src="https://source.unsplash.com/600x400/?volunteers"
+            alt="Volunteer Meet"
+            class="w-full h-44 object-cover"
+            loading="lazy"
+          />
+          <div class="p-4 flex flex-col items-center text-center space-y-3">
+            <h2 class="text-lg font-semibold text-gray-900">Volunteer Meet</h2>
+            <a
+              href="event3.html"
+              class="inline-block px-5 py-2 bg-gradient-to-r from-blue-600 to-blue-800 text-white font-semibold rounded-full shadow-md hover:shadow-lg hover:opacity-90 focus:outline-none focus:ring-4 focus:ring-blue-400 transition"
+            >
+              View
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-2xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 focus-within:scale-105 focus-within:shadow-lg cursor-pointer"
+          tabindex="0"
+          aria-label="Education Seminar event card"
+        >
+          <img
+            src="https://source.unsplash.com/600x400/?seminar"
+            alt="Education Seminar"
+            class="w-full h-44 object-cover"
+            loading="lazy"
+          />
+          <div class="p-4 flex flex-col items-center text-center space-y-3">
+            <h2 class="text-lg font-semibold text-gray-900">Education Seminar</h2>
+            <a
+              href="event4.html"
+              class="inline-block px-5 py-2 bg-gradient-to-r from-blue-600 to-blue-800 text-white font-semibold rounded-full shadow-md hover:shadow-lg hover:opacity-90 focus:outline-none focus:ring-4 focus:ring-blue-400 transition"
+            >
+              View
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-2xl shadow-md overflow-hidden transform transition-transform duration-300 hover:scale-105 focus-within:scale-105 focus-within:shadow-lg cursor-pointer"
+          tabindex="0"
+          aria-label="Fundraising Gala event card"
+        >
+          <img
+            src="https://source.unsplash.com/600x400/?fundraising"
+            alt="Fundraising Gala"
+            class="w-full h-44 object-cover"
+            loading="lazy"
+          />
+          <div class="p-4 flex flex-col items-center text-center space-y-3">
+            <h2 class="text-lg font-semibold text-gray-900">Fundraising Gala</h2>
+            <a
+              href="event5.html"
+              class="inline-block px-5 py-2 bg-gradient-to-r from-blue-600 to-blue-800 text-white font-semibold rounded-full shadow-md hover:shadow-lg hover:opacity-90 focus:outline-none focus:ring-4 focus:ring-blue-400 transition"
+            >
+              View
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300">
+      <div
+        class="max-w-7xl mx-auto px-6 py-12 grid sm:grid-cols-2 md:grid-cols-3 gap-10"
+      >
+        <!-- About -->
+        <div>
+          <h3 class="text-2xl font-semibold text-white mb-5">About Us</h3>
+          <p class="text-gray-400 text-base leading-relaxed max-w-sm">
+            We are dedicated to serving the community with impactful programs
+            and events that make a difference.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-2xl font-semibold text-white mb-5">Quick Links</h3>
+          <ul class="space-y-3 text-base">
+            <li>
+              <a href="#" class="hover:text-white transition focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-white transition focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-white transition focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">
+                Events
+              </a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-white transition focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social Media -->
+        <div>
+          <h3 class="text-2xl font-semibold text-white mb-5">Follow Us</h3>
+          <div class="flex space-x-6 text-lg">
+            <a href="#" aria-label="Facebook" class="hover:text-white transition focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">
+              <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M22 12a10 10 0 10-11.5 9.9v-7h-3v-3h3v-2.3c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 1-2 2v2.3h3.4l-.5 3h-2.9v7A10 10 0 0022 12z"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="Twitter" class="hover:text-white transition focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">
+              <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M23 3a10.9 10.9 0 01-3.14.86 5.48 5.48 0 002.4-3 10.9 10.9 0 01-3.48 1.33 5.48 5.48 0 00-9.3 5 15.6 15.6 0 01-11.3-5.7 5.48 5.48 0 001.7 7.3 5.4 5.4 0 01-2.5-.7v.07a5.48 5.48 0 004.4 5.4 5.5 5.5 0 01-2.5.1 5.48 5.48 0 005.1 3.8 11 11 0 01-6.8 2.3c-.4 0-.8 0-1.2-.1a15.5 15.5 0 008.4 2.5c10 0 15.5-8.3 15.5-15.5 0-.2 0-.4 0-.6A11 11 0 0023 3z"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="Instagram" class="hover:text-white transition focus:outline-none focus:ring-2 focus:ring-blue-500 rounded">
+              <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2a3 3 0 013 3v10a3 3 0 01-3 3H7a3 3 0 01-3-3V7a3 3 0 013-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-3a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="border-t border-gray-700 text-center text-sm py-5 text-gray-500 select-none"
+      >
+        © 2025 Your Organization. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        const isHidden = mobileMenu.classList.toggle("hidden");
+        menuBtn.setAttribute("aria-expanded", !isHidden);
+      });
+    </script>
+  </body>
+</html>
